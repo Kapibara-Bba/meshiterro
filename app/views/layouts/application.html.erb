@@ -14,7 +14,25 @@
 
   <body>
   
-  <div id="slidemenu">
+ 
+  </ul>
+  </div>
+    <div class="header" id="header">
+      <nav class="navbar navbar-main navbar-shadow" role="navigation" id="slide-nav">
+        <div class="container relative">
+          <div class="navbar-header">
+            <a class="navbar-logo" href="/">
+              <%= image_tag('logo.png') %>
+            </a>
+  
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+         <div id="slidemenu">
   <ul class="nav navbar-nav navbar-right" data-hover="dropdown" data-animations="zoomIn fadeIn fadeInUp fadeIn">
     <% if user_signed_in? %>
       <li class="">
@@ -37,35 +55,7 @@
     <% end %>
   </ul>
 </div>
-    <div class="header" id="header">
-      <nav class="navbar navbar-main navbar-shadow" role="navigation" id="slide-nav">
-        <div class="container relative">
-          <div class="navbar-header">
-            <a class="navbar-logo" href="/">
-              <%= image_tag('logo.png') %>
-            </a>
-  
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div>
-          <div id="slidemenu">
-            <ul class="nav navbar-nav navbar-right" data-hover="dropdown" data-animations="zoomIn fadeIn fadeInUp fadeIn">
-	      	  	<li class="">
-                <a href="">
-                  <span>新規登録</span>
-                </a>
-              </li>
-              <li class="">
-                <a href="">
-                  <span>ログイン</span>
-                </a>
-              </li>
-            </ul>
-          </div>
+
         </div>
       </nav>
     </div>
